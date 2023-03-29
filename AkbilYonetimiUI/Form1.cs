@@ -24,6 +24,11 @@ namespace AkbilYonetimiUI
             checkBoxHatirla.TabIndex = 3;
             btnGirisYap.TabIndex = 4;
             btnKayitOl.TabIndex = 5;
+            txtSifre.PasswordChar = '*';
+
+            //beni hatirlayi Properties.Settings ile yapana kadar burasý böyle kolaylýk saglasin
+            txtEmail.Text = "cerensemiz@gmail.com";
+            txtSifre.Text = "123";
 
         }
         private void btnKayitOl_Click(object sender, EventArgs e)
