@@ -168,6 +168,7 @@
             talimatiYukleToolStripMenuItem.Name = "talimatiYukleToolStripMenuItem";
             talimatiYukleToolStripMenuItem.Size = new Size(180, 22);
             talimatiYukleToolStripMenuItem.Text = "Talimatı Yükle";
+            talimatiYukleToolStripMenuItem.Click += talimatiYukleToolStripMenuItem_Click;
             // 
             // talimatiIptalEtToolStripMenuItem
             // 

@@ -122,10 +122,10 @@ namespace AkbilYntmVeriKatmani
                 }
                 setler = setler.Trim().TrimEnd(','); //todo deneyecegiz...
 
-                sorgu = $"update {tabloAdi} set {setler} ";
+                sorgu += $"update {tabloAdi} set {setler} ";
                 if (!string.IsNullOrEmpty(kosullar))
                 {
-                    sorgu = $" where {kosullar}";
+                    sorgu += $" where {kosullar}";
                 }
                 return sorgu;
             }
@@ -196,7 +196,7 @@ namespace AkbilYntmVeriKatmani
             {
                 using (baglanti)
                 {
-                    string sorgu = $"delete from {tabloAdi} ";
+                    string sorgu = $" delete from {tabloAdi} ";
                     if (!string.IsNullOrEmpty(kosullar))
                     {
                         sorgu += $" where {kosullar}";
